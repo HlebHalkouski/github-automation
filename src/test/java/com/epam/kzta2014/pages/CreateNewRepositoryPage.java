@@ -1,37 +1,44 @@
 package com.epam.kzta2014.pages;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 import com.epam.kzta2014.utils.Utils;
+
+import ru.yandex.qatools.htmlelements.annotations.Name;
+import ru.yandex.qatools.htmlelements.element.Button;
+import ru.yandex.qatools.htmlelements.element.HtmlElement;
+import ru.yandex.qatools.htmlelements.element.TextInput;
+import ru.yandex.qatools.htmlelements.loader.HtmlElementLoader;
 
 public class CreateNewRepositoryPage extends AbstractPage
 {
 	private final String BASE_URL = "http://www.github.com/new";
-	private final Logger logger = Logger.getLogger(CreateNewRepositoryPage.class);
-
+	
+	@Name("Repository Name")
 	@FindBy(id = "repository_name")
-	private WebElement inputRepositoryName;
+	private TextInput inputRepositoryName;
 
+	@Name("Repository Description")
 	@FindBy(id = "repository_description")
-	private WebElement inputRepositoryDescription;
+	private TextInput inputRepositoryDescription;
 
+	@Name("Create repository")
 	@FindBy(xpath = "//form[@id='new_repository']//button[@type='submit']")
-	private WebElement butttonCreate;
+	private Button butttonCreate;
 
+	@Name("Empty Repo Setup Option")
 	@FindBy(className = "empty-repo-setup-option")
-	private WebElement labelEmptyRepoSetupOption;
+	private HtmlElement labelEmptyRepoSetupOption;
 
+	@Name("Current Repository")
 	@FindBy(xpath = "//a[@data-pjax='#js-repo-pjax-container']")
-	private WebElement linkCurrentRepository;
+	private HtmlElement linkCurrentRepository;
 
 	public CreateNewRepositoryPage(WebDriver driver)
 	{
 		super(driver);
-		PageFactory.initElements(this.driver, this);
+		HtmlElementLoader.populatePageObject(this, driver);
 	}
 
 	public boolean isCurrentRepositoryEmpty()

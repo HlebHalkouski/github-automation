@@ -1,26 +1,31 @@
 package com.epam.kzta2014.pages;
 
 import com.epam.kzta2014.pages.AbstractPage;
+
+import ru.yandex.qatools.htmlelements.annotations.Name;
+import ru.yandex.qatools.htmlelements.element.Button;
+import ru.yandex.qatools.htmlelements.element.Link;
+import ru.yandex.qatools.htmlelements.loader.HtmlElementLoader;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class MainPage extends AbstractPage
 {
 	private final String BASE_URL = "https://github.com/";
 
+	@Name("Create New Repository")
 	@FindBy(xpath = "//a[contains(@aria-label, 'Create new')]")
-	private WebElement buttonCreateNew;
+	private Button buttonCreateNew;
 
+	@Name("New Repository")
 	@FindBy(xpath = "//a[contains(text(), 'New repository')]")
-	private WebElement linkNewRepository;
+	private Link linkNewRepository;
 
 	public MainPage(WebDriver driver)
 	{
 		super(driver);
-		PageFactory.initElements(this.driver, this);
+		HtmlElementLoader.populatePageObject(this, driver);
 	}
 
 	public void clickOnCreateNewRepositoryButton()

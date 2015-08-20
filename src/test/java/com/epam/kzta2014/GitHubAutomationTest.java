@@ -3,7 +3,6 @@ package com.epam.kzta2014;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.epam.kzta2014.steps.Steps;

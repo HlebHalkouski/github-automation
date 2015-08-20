@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.epam.kzta2014.GitHubAutomationTest" time="30.514" tests="5" errors="0" skipped="3" failures="2">
+<testsuite name="com.epam.kzta2014.GitHubAutomationTest" time="0.129" tests="2" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_45\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Users\Hleb_Halkouski\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8873544468911502143.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Hleb_Halkouski\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3976459941197644075.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_51/bin/server;C:/Program Files/Java/jre1.8.0_51/bin;C:/Program Files/Java/jre1.8.0_51/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\apache-maven-3.3.3\bin; D:\Mobile\Android SDK\tools; D:\Mobile\Android SDK\platform-tools;D:\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,47 +60,21 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="oneCanCreateProject" classname="com.epam.kzta2014.GitHubAutomationTest" time="14.513">
-    <failure message="Window not found. The browser window may have been closed.&#10;Command duration or timeout: 36 milliseconds&#10;Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;&#10;System info: host: &apos;EPBYMINW2701&apos;, ip: &apos;10.6.103.20&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: dc2a8a02-0a18-47c1-9adf-a09569afbc9b&#10;*** Element info: {Using=id, value=repository_name}" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 36 milliseconds
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'EPBYMINW2701', ip: '10.6.103.20', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: dc2a8a02-0a18-47c1-9adf-a09569afbc9b
-*** Element info: {Using=id, value=repository_name}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:389)
-	at org.openqa.selenium.By$ById.findElement(By.java:215)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
-	at com.epam.kzta2014.pages.CreateNewRepositoryPage.createNewRepository(CreateNewRepositoryPage.java:45)
-	at com.epam.kzta2014.steps.Steps.createNewRepository(Steps.java:50)
-	at com.epam.kzta2014.GitHubAutomationTest.oneCanCreateProject(GitHubAutomationTest.java:28)
-Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'EPBYMINW2701', ip: '10.6.103.20', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'
-Driver info: driver.version: unknown
-	at <anonymous class>.nsCommandProcessor.prototype.execute(file:///C:/Users/Hleb_Halkouski/AppData/Local/Temp/anonymous7929839692490194640webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12711)
-	at <anonymous class>.Dispatcher.executeAs/<(file:///C:/Users/Hleb_Halkouski/AppData/Local/Temp/anonymous7929839692490194640webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9456)
-	at <anonymous class>.Resource.prototype.handle(file:///C:/Users/Hleb_Halkouski/AppData/Local/Temp/anonymous7929839692490194640webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9603)
-	at <anonymous class>.Dispatcher.prototype.dispatch(file:///C:/Users/Hleb_Halkouski/AppData/Local/Temp/anonymous7929839692490194640webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9550)
-	at <anonymous class>.WebDriverServer/<.handle(file:///C:/Users/Hleb_Halkouski/AppData/Local/Temp/anonymous7929839692490194640webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12497)
-	at <anonymous class>.createHandlerFunc/<(file:///C:/Users/Hleb_Halkouski/AppData/Local/Temp/anonymous7929839692490194640webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)
-	at <anonymous class>.ServerHandler.prototype.handleResponse(file:///C:/Users/Hleb_Halkouski/AppData/Local/Temp/anonymous7929839692490194640webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)
-	at <anonymous class>.Connection.prototype.process(file:///C:/Users/Hleb_Halkouski/AppData/Local/Temp/anonymous7929839692490194640webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)
-	at <anonymous class>.RequestReader.prototype._handleResponse(file:///C:/Users/Hleb_Halkouski/AppData/Local/Temp/anonymous7929839692490194640webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)
-	at <anonymous class>.RequestReader.prototype._processBody(file:///C:/Users/Hleb_Halkouski/AppData/Local/Temp/anonymous7929839692490194640webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)
-	at <anonymous class>.RequestReader.prototype.onInputStreamReady(file:///C:/Users/Hleb_Halkouski/AppData/Local/Temp/anonymous7929839692490194640webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)
+  <testcase name="oneCanCreateProject" classname="com.epam.kzta2014.GitHubAutomationTest" time="0.128">
+    <failure message="org/apache/commons/lang/WordUtils" type="java.lang.NoClassDefFoundError"><![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/lang/WordUtils
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at ru.yandex.qatools.htmlelements.loader.decorator.HtmlElementUtils.splitCamelCase(HtmlElementUtils.java:128)
+	at ru.yandex.qatools.htmlelements.loader.decorator.HtmlElementUtils.getElementName(HtmlElementUtils.java:115)
+	at ru.yandex.qatools.htmlelements.loader.decorator.HtmlElementDecorator.decorate(HtmlElementDecorator.java:56)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:112)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:104)
+	at ru.yandex.qatools.htmlelements.loader.HtmlElementLoader.populatePageObject(HtmlElementLoader.java:181)
+	at com.epam.kzta2014.pages.LoginPage.<init>(LoginPage.java:32)
+	at com.epam.kzta2014.steps.Steps.loginGithub(Steps.java:34)
+	at com.epam.kzta2014.GitHubAutomationTest.oneCanCreateProject(GitHubAutomationTest.java:26)
 ]]></failure>
     <system-out><![CDATA[Configuring TestNG with: TestNG652Configurator
 ]]></system-out>
@@ -109,49 +83,17 @@ log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
 ]]></system-err>
   </testcase>
-  <testcase name="stopBrowser" classname="com.epam.kzta2014.GitHubAutomationTest" time="16.001">
-    <failure message="Error communicating with the remote browser. It may have died.&#10;Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;&#10;System info: host: &apos;EPBYMINW2701&apos;, ip: &apos;10.6.103.20&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'EPBYMINW2701', ip: '10.6.103.20', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'
-Driver info: driver.version: RemoteWebDriver
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:170)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:393)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:464)
-	at com.epam.kzta2014.steps.Steps.closeDriver(Steps.java:29)
-	at com.epam.kzta2014.GitHubAutomationTest.stopBrowser(GitHubAutomationTest.java:43)
-</failure>
-  </testcase>
-  <testcase name="setUp" classname="com.epam.kzta2014.GitHubAutomationTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="oneCanLoginGithub" classname="com.epam.kzta2014.GitHubAutomationTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="stopBrowser" classname="com.epam.kzta2014.GitHubAutomationTest" time="0">
-    <skipped/>
+  <testcase name="oneCanLoginGithub" classname="com.epam.kzta2014.GitHubAutomationTest" time="0.001">
+    <failure message="org/apache/commons/lang/WordUtils" type="java.lang.NoClassDefFoundError"><![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/lang/WordUtils
+	at ru.yandex.qatools.htmlelements.loader.decorator.HtmlElementUtils.splitCamelCase(HtmlElementUtils.java:128)
+	at ru.yandex.qatools.htmlelements.loader.decorator.HtmlElementUtils.getElementName(HtmlElementUtils.java:115)
+	at ru.yandex.qatools.htmlelements.loader.decorator.HtmlElementDecorator.decorate(HtmlElementDecorator.java:56)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:112)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:104)
+	at ru.yandex.qatools.htmlelements.loader.HtmlElementLoader.populatePageObject(HtmlElementLoader.java:181)
+	at com.epam.kzta2014.pages.LoginPage.<init>(LoginPage.java:32)
+	at com.epam.kzta2014.steps.Steps.loginGithub(Steps.java:34)
+	at com.epam.kzta2014.GitHubAutomationTest.oneCanLoginGithub(GitHubAutomationTest.java:35)
+]]></failure>
   </testcase>
 </testsuite>
