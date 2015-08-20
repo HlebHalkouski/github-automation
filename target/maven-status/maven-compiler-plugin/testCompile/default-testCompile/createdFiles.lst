@@ -1,0 +1,7 @@
+com\epam\kzta2014\pages\LoginPage.class
+com\epam\kzta2014\GitHubAutomationTest.class
+com\epam\kzta2014\steps\Steps.class
+com\epam\kzta2014\pages\MainPage.class
+com\epam\kzta2014\pages\CreateNewRepositoryPage.class
+com\epam\kzta2014\pages\AbstractPage.class
+com\epam\kzta2014\utils\Utils.class
