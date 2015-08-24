@@ -1,6 +1,4 @@
-package com.epam.kzta2014.pages;
-
-import com.epam.kzta2014.pages.AbstractPage;
+package com.epam.ta.pages;
 
 import ru.yandex.qatools.htmlelements.annotations.Name;
 import ru.yandex.qatools.htmlelements.element.Button;
@@ -8,6 +6,9 @@ import ru.yandex.qatools.htmlelements.element.Link;
 import ru.yandex.qatools.htmlelements.loader.HtmlElementLoader;
 
 import org.openqa.selenium.support.FindBy;
+
+import com.epam.ta.pages.AbstractPage;
+
 import org.openqa.selenium.WebDriver;
 
 public class MainPage extends AbstractPage

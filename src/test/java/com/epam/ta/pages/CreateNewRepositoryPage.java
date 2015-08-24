@@ -1,9 +1,9 @@
-package com.epam.kzta2014.pages;
+package com.epam.ta.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-import com.epam.kzta2014.utils.Utils;
+import com.epam.ta.utils.Utils;
 
 import ru.yandex.qatools.htmlelements.annotations.Name;
 import ru.yandex.qatools.htmlelements.element.Button;

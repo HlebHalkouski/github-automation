@@ -1,4 +1,4 @@
-package com.epam.kzta2014.pages;
+package com.epam.ta.pages;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
